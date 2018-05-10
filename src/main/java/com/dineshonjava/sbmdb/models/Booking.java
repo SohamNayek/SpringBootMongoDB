@@ -15,6 +15,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * @author Dinesh.Rajput
  *
  */
+
 @Document
 public class Booking{
 
@@ -23,6 +24,7 @@ public class Booking{
 	String psngrName;
 	String departure;
 	String destination;
+	
 	@JsonFormat(pattern="YYYY-MM-dd")
 	Date travelDate;
 
