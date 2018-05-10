@@ -8,6 +8,9 @@ import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  * @author Dinesh.Rajput
  *
@@ -20,6 +23,7 @@ public class Booking{
 	String psngrName;
 	String departure;
 	String destination;
+	@JsonFormat(pattern="YYYY-MM-dd")
 	Date travelDate;
 
 	public String getId() {
